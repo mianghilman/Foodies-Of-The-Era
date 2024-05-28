@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies Of The Era</title>
+    <link rel="stylesheet" href="styles1.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* bg image */
+        .product-card {
+            border: 1px solid #150707;
+            margin-bottom: 20px; }
+            body{
+            background-image: url(p3.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            
+        }
+       
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+         <img src="foodies of the era logo.png" class="logo1" alt="Logo">
+        <a class="navbar-brand" href="index.html" style=" text-shadow: 2px 2px 2px black;">FOODIES OF THE ERA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="flavourprofilegp.html">Customize</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutpagegp.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactpagegp.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+<!-- slideshow images -->
+
+<div class="slideshow-container" style="width: 100%; height: 650px;">
+    <img src="slidesu2.png" alt="Image 1" class="active">
+    <img src="slideu1.png" alt="Image 2">
+    <img src="p7.jpg" alt="Image 3">
+    <img src="m1.jpg" alt="Image 4">
+</div>
+
+<script>
+    const images = document.querySelectorAll('.slideshow-container img');
+    let currentIndex = 0;
+
+    function changeImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+
+    setInterval(changeImage, 3000);
+</script>
+
+
+
+
+
+
+
+
+
+
+<h3 style="color: aliceblue; text-shadow: 2px 2px 2px black;">Connecting Food Enthusiasts with Perfect Dining Experiences</h3>
+<p style="color: aliceblue;  text-shadow: 2px 2px 2px black;">Foodies of the Era" is a dynamic website that caters to gourmet enthusiasts and casual diners alike, offering a rich tapestry of culinary content that spans across different eras and cultures. The site is a treasure trove of meticulously curated restaurant reviews, innovative recipes, and insightful articles on global food trends. It highlights the evolution of culinary practices and showcases the work of renowned chefs alongside emerging talents. With its user-friendly design and interactive features, "Foodies of the Era" provides a platform for food lovers to explore and share their passion for cuisine, making it an essential destination for anyone eager to elevate their gastronomic experience.</p>
+</div>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="darkpopcorns.jpg" alt="Sandwich" style="width:100%; height: 500px;">
+      <h3 style="color: aliceblue;  text-shadow: 2px 2px 2px black;">Our Journey</h3>
+      <p style="color: aliceblue;  text-shadow: 2px 2px 2px black;">We Started as a small passion project by a group of avid travelers who wanted to share their unique experiences and insights with the world. What started as a humble blog quickly grew into a comprehensive platform, fueled by a community of like-minded explorers eager to document and exchange their travel stories. The founders, driven by their love for adventure and cultural discovery, aimed to create a space where people could find inspiration, practical travel tips, and detailed guides to various destinations. Through engaging narratives and stunning visuals, Our Journey not only highlights the beauty and diversity of the world but also promotes sustainable and responsible travel practices, making it a trusted resource for anyone looking to embark on their own journey.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="whitebg4k.jpg" alt="Steak" style="width:100%; height: 500px;">
+      <h3 style="color: aliceblue;  text-shadow: 2px 2px 2px black;">Explore Diverse Cuisines</h3>
+      <p style="color: aliceblue;  text-shadow: 2px 2px 2px black;">From the hearty flavors of European cuisine to the vibrant spices of Pakistani dishes, our survey covers a wide range of favorite foods. Check the boxes that resonate with your cravings and let us guide you to the best dining experiences.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="tablefood4k.jpg" alt="Cherries" style="width:100%; height: 500px;">
+      <h3 style="color: aliceblue;  text-shadow: 2px 2px 2px black;">Personalized Recommendations</h3>
+      <p style="color: aliceblue;  text-shadow: 2px 2px 2px black;">Personalized Recommendations</p>
+      
+    </div>
+   
+  </div>
+
+
+
+
+<!-- Restaurants -->
+<div class="container mt-5">
+    <h2 class="mb-4" style="color: aliceblue;  text-shadow: 2px 2px 2px black;">Featured Products</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="dominos.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Dominos</h5>
+                    <p class="card-text"></p>
+                    <a href="https://www.dominos.co.uk/?gad_source=1&gclid=CjwKCAjwi_exBhA8EiwA_kU1Mvyq1uyXgZt-p3Hq_WHvzdmoQZKo-cDx7LNFu6udzbKimYWcIcSIUxoCQgcQAvD_BwE" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="papa johns.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Papa Johns</h5>
+                    <p class="card-text"></p>
+                    <a href="https://www.papajohns.co.uk" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="kfc.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">KFC</h5>
+                    <p class="card-text"></p>
+                    <a href="https://www.kfc.co.uk" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="p7.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Dishoom</h5>
+                    <p class="card-text"></p>
+                    <a href="https://www.dishoom.com/manchester/" class="btn btn-primary">Buy</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="pizzahut.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Pizza Hut</h5>
+                    <p class="card-text"></p>
+                    <a href="https://www.pizzahut.co.uk" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="starbucks.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Starbucks</h5>
+                    <p class="card-text"></p>
+                    <a href="https://www.kfc.co.uk" class="btn btn-primary">Buy</a>
+                    </div>
+                    </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="windys.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Windy's</h5>
+                    <p class="card-text"></p>
+                    <a href="https://www.wendys.com/en-uk" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="Dressed Up Donuts at Dunkin’.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Dunkin</h5>
+                    <p class="card-text"></p>
+                    <a href="https://dunkin.co.uk/menu/donuts?availability=21&gad_source=1&gclid=EAIaIQobChMIsauSsp2hhgMV8ZlQBh22-QIFEAAYASAAEgIkbvD_BwE" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="Find Your Colors In The New Year With SUBWAY®.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Subway</h5>
+                    <p class="card-text"></p>
+                    <a href="https://www.subway.com/en-gb" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+<a href="flavourprofilegp.html" class="btn"> <button type="button" class="btn btn-outline-primary">Began Survey</button></a> 
+
+
+
+ <!-- Second Photo Grid-->
+ <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="p4.jpg" alt="Sandwich" style="width:100%">
+      <h3 style="color: aliceblue;">Satisfy Your Meal Type Preferences</h3>
+      <p style="color: aliceblue;">Are you an early bird looking for the best breakfast spots or a night owl searching for a cozy dinner place? Our survey takes into account your preferred meal type to ensure you find the ideal dining experience, no matter the time of day.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="p1.jpg" alt="Steak" style="width:100%">
+      <h3 style="color: aliceblue;">Join the Foodie Community</h3>
+      <p style="color: aliceblue;">Connect with other food enthusiasts and share your culinary adventures. Our platform is designed to bring together food lovers from all walks of life, fostering a community where you can exchange recommendations, reviews, and more.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="p3.jpg" alt="Cherries" style="width:100%">
+      <h3 style="color: aliceblue;">About Foodies of the Era</h3>
+      <p style="color: aliceblue;">Foodies of the Era is dedicated to celebrating the diverse and rich world of culinary arts. Our mission is to help you discover new flavors, savor your favorites, and enjoy every meal to the fullest. Learn more about our journey and what drives us to bring you the best dining experiences.</p>
+    
+    </div>
+    
+  </div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3 mt-5">
+    <img id="logo" src="foodies of the era logo.png" alt="Foodies Of The Era Logo"> <!-- Insert your logo image here --><p style=" text-shadow: 2px 2px 2px black;">&copy; 2024 Foodies Of The Era. All Rights Reserved.</p>
+</footer>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

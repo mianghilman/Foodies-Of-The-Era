@@ -7,25 +7,22 @@
     <title>Contact Us - Foodies of the Era</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body{
+        body {
             background-image: url(nalka.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
-            
         }
     </style>
 </head>
 
 <body>
-    
     <header>
         <h1>Contact Us</h1>
         <p>Get in touch with Foodies of the Era.</p>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-           
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -61,7 +58,7 @@
 
         <section>
             <h2>Send Us a Message</h2>
-            <form action="#" method="POST">
+            <form id="contactForm">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -73,12 +70,23 @@
 
                 <button class="btn" type="submit">Send Message</button>
             </form>
+            <div id="confirmationMessage" style="display: none; color: rgb(255, 255, 255); margin-top: 20px; text-shadow: 3px 3px 3px black;">
+                Message sent
+            </div>
         </section>
     </main>
 
     <footer>
-        <img id="logo" src="foodies of the era logo.png" alt="Foodies Of The Era Logo"> <!-- Insert your logo image here -->  <p>&copy; 2024 Foodies of the Era</p>
+        <img id="logo" src="foodies of the era logo.png" alt="Foodies Of The Era Logo"> <!-- Insert your logo image here -->
+        <p>&copy; 2024 Foodies of the Era</p>
     </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+            document.getElementById('confirmationMessage').style.display = 'block'; // Show the confirmation message
+        });
+    </script>
 </body>
 
 </html>
